@@ -1,0 +1,37 @@
+//rows
+::-webkit-scrollbar
+  display: none
+
+.rows__container
+  position: relative
+  z-index: 2
+  margin-top: 50px
+  margin-left: 0px
+  width: 100%
+  padding: 0 20px
+  @include media ($medium-screen)
+    margin-top: 150px
+    margin-left: 250px
+    width: auto
+    padding: 0
+
+  .rows__header
+    text-transform: uppercase
+
+  .rows__gallery
+    white-space: nowrap
+    width: 100%
+    overflow-x: auto
+    padding: 0
+    margin: 0
+    margin-bottom: 40px
+
+    li
+      display: inline
+      margin: 0
+      padding: 0
+      list-style: none
+
+    .rows__images
+      height: 200px
+      width: auto

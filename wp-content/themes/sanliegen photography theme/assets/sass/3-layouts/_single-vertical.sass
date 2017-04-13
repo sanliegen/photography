@@ -1,0 +1,85 @@
+// vertical
+.vertical__container
+  position: relative
+  margin: 0 auto
+  margin-top: 100px
+  max-width: 1200px
+
+.vertical__header
+  max-width: 80%
+  margin: 0 auto
+
+  h1
+    text-transform: uppercase
+    font-weight: $light
+    font-size: 1.2rem
+    line-height: 1em
+    margin: 0
+    padding: 0
+    margin-bottom: 3rem
+    transition: all 0.2s ease-in-out
+    @include media($medium-screen)
+      font-size: 2rem
+    @include media($large-screen)
+      font-size: 4rem
+
+.vertical__gallery
+  max-width: 80%
+  margin: 0 auto
+
+// vertical widget
+.vertical__widget
+  position: relative
+  overflow: hidden
+  line-height: 0
+  width: 100%
+  margin: 0
+  padding: 0
+  margin-bottom: 1em
+
+.vertical__widget img
+  transition: all 0.5s linear
+  width: 100%
+  height: auto
+  top: 0
+  left: 0
+  transform: scale3d(1.1, 1.1, 1)
+
+.vertical__widget__figcaption
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  width: 100%
+  overflow: hidden
+  height: 100%
+  background: rgba(0, 0, 0, 0)
+  transition: background 0.5s linear
+
+.vertical__widget a
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  width: 100%
+  overflow: hidden
+  height: 100%
+  background: none
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 2em
+  font-weight: $light
+  text-transform: uppercase
+  color: white
+
+.vertical__widget:hover .vertical__widget__figcaption
+  background: rgba(0, 0, 0, 0.3)
+
+.vertical__widget:hover img
+  transform: scale3d(1, 1, 1)
+
+.vertical__widget:hover a
+  color: white
