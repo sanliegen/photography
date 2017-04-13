@@ -64,6 +64,12 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
+
+  acf_add_options_sub_page(array(
+		'page_title' 	=> 'Admin Dont Touch',
+		'menu_title'	=> 'Admin',
+		'parent_slug'	=> 'theme-general-settings',
+	));
 }
 
 /*

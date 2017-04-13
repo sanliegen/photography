@@ -298,17 +298,17 @@ html {
 /* COLORS */
 /* FONTS */
 /* MEDIA */
-/* line 19, sass/2-basics/_variables.sass */
+/* line 20, sass/2-basics/_variables.sass */
 img::selection {
   background: transparent;
 }
 
-/* line 22, sass/2-basics/_variables.sass */
+/* line 23, sass/2-basics/_variables.sass */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 25, sass/2-basics/_variables.sass */
+/* line 26, sass/2-basics/_variables.sass */
 body {
   -webkit-tap-highlight-color: transparent;
 }
@@ -318,7 +318,7 @@ body {
   background-color: #fff;
   font-size: 16px;
   line-height: 1.5em;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #000;
   -webkit-font-smoothing: antialiased;
@@ -329,7 +329,7 @@ body {
 a {
   text-decoration: none;
   outline: 0;
-  color: #000;
+  color: #3D3D3D;
   transition: color 0.3s ease;
 }
 /* line 16, sass/2-basics/_body-element.sass */
@@ -491,6 +491,80 @@ p span {
     3 - layouts
   ==================================
 */
+/* line 1, sass/3-layouts/_simple-navigation.sass */
+.simple__navigation {
+  background-color: transparent;
+  min-height: 60px;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 10, sass/3-layouts/_simple-navigation.sass */
+.simple__navigation__wrapper {
+  position: relative;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 16, sass/3-layouts/_simple-navigation.sass */
+.simple__navigation__wrapper .simple__navigation {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+/* line 21, sass/3-layouts/_simple-navigation.sass */
+.simple__navigation__wrapper .simple__navigation__brand {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 768px) {
+  /* line 21, sass/3-layouts/_simple-navigation.sass */
+  .simple__navigation__wrapper .simple__navigation__brand {
+    flex-basis: 350px;
+  }
+}
+/* line 26, sass/3-layouts/_simple-navigation.sass */
+.simple__navigation__wrapper .simple__navigation__brand img {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: auto;
+  bottom: 0;
+  margin: auto;
+  height: 65px;
+}
+@media screen and (min-width: 768px) {
+  /* line 26, sass/3-layouts/_simple-navigation.sass */
+  .simple__navigation__wrapper .simple__navigation__brand img {
+    left: 0;
+    right: 0;
+  }
+}
+/* line 38, sass/3-layouts/_simple-navigation.sass */
+.simple__navigation__wrapper .simple__navigation__contact {
+  flex-basis: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  color: #3D3D3D;
+}
+@media screen and (min-width: 768px) {
+  /* line 38, sass/3-layouts/_simple-navigation.sass */
+  .simple__navigation__wrapper .simple__navigation__contact {
+    font-size: 18px;
+    padding-left: 0;
+    flex-basis: calc(100% - 350px);
+  }
+}
+/* line 51, sass/3-layouts/_simple-navigation.sass */
+.simple__navigation__wrapper .simple__navigation__contact .simple__navigation__link {
+  padding-left: 3px;
+}
+
 /* line 2, sass/3-layouts/_centered-navigation.sass */
 .centered-navigation {
   background-color: white;
@@ -555,13 +629,13 @@ p span {
   line-height: 60px;
   text-transform: uppercase;
   padding-left: 1em;
-  color: #000;
+  color: #3D3D3D;
   font-weight: 400;
   font-size: 20px;
 }
 /* line 54, sass/3-layouts/_centered-navigation.sass */
 .centered-navigation .brand:focus, .centered-navigation .brand:hover {
-  color: #1a1a1a;
+  color: #575757;
 }
 /* line 58, sass/3-layouts/_centered-navigation.sass */
 .centered-navigation ul.centered-navigation-menu {
@@ -598,7 +672,7 @@ p span {
 }
 /* line 86, sass/3-layouts/_centered-navigation.sass */
 .centered-navigation ul li a {
-  color: #000;
+  color: #3D3D3D;
   display: inline-block;
   outline: none;
   text-decoration: none;
@@ -608,7 +682,7 @@ p span {
 }
 /* line 95, sass/3-layouts/_centered-navigation.sass */
 .centered-navigation ul li a:focus, .centered-navigation ul li a:hover {
-  color: #1a1a1a;
+  color: #575757;
 }
 @media screen and (min-width: 768px) {
   /* line 76, sass/3-layouts/_centered-navigation.sass */

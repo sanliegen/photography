@@ -15,7 +15,8 @@
 
 function frontend_load_scripts() {
   wp_enqueue_style( 'Tenor', 'https://fonts.googleapis.com/css?family=Tenor+Sans');
-  wp_enqueue_style( 'Archivo', 'https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700');
+  wp_enqueue_style( 'Oswald', 'https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700');
+  wp_enqueue_style( 'Roboto', 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
   wp_enqueue_style( 'mickirosirichter', get_template_directory_uri() . '/assets/style.css', array(), '1.0.0', 'all');
   wp_enqueue_style( 'mfpcss', get_template_directory_uri() . '/assets/mfp.css', array(), '1.0.0', 'all');
   wp_deregister_script( 'jquery' );

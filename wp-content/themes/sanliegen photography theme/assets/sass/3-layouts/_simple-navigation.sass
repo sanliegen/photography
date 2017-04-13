@@ -1,0 +1,52 @@
+.simple__navigation
+  background-color: transparent
+  min-height: 60px
+  z-index: 9999
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+
+.simple__navigation__wrapper
+  position: relative
+  height: 150px
+  display: flex
+  flex-wrap: wrap
+
+  .simple__navigation
+    position: relative
+    flex-grow: 0
+    flex-shrink: 0
+
+  .simple__navigation__brand
+    flex-basis: 100%
+    @include media($medium-screen)
+      flex-basis: 350px
+
+    img
+      position: absolute
+      top: 0
+      left: 10px
+      right: auto
+      bottom: 0
+      margin: auto
+      height: 65px
+      @include media($medium-screen)
+        left: 0
+        right: 0
+
+  .simple__navigation__contact
+    flex-basis: 100%
+    font-weight: 300
+    font-size: 16px
+    display: flex
+    padding-left: 10px
+    align-items: center
+    color: $text-accent
+    @include media($medium-screen)
+      font-size: 18px
+      padding-left: 0
+      flex-basis: calc(100% - 350px)
+
+    .simple__navigation__link
+      padding-left: 3px

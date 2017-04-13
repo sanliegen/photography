@@ -48,7 +48,8 @@ $(window).on("load resize",function(e) {
   var more = document.getElementById("js-centered-more");
 
   var link = document.getElementById("dropdown-link");
-  link.setAttribute('href', "javascript:void(0)");
+
+  if (link) {link.setAttribute('href', "javascript:void(0)");} else {}
 
   var menuToggle = $("#js-centered-navigation-mobile-menu").unbind();
   $("#js-centered-navigation-menu").removeClass("show");

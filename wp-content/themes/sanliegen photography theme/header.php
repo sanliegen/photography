@@ -13,7 +13,7 @@
   <?php if( get_field('header_theme', 'option') == 'menu_one' ): ?>
     <?php get_template_part( 'template-header/centered-navigation' );?>
   <?php elseif( get_field('header_theme', 'option') == 'menu_two' ): ?>
-    <?php echo "two"; ?>
+    <?php get_template_part( 'template-header/simple-navigation' );?>
   <?php elseif( get_field('header_theme', 'option') == 'menu_thress' ): ?>
     <?php echo "thress"; ?>
   <?php endif; ?>
