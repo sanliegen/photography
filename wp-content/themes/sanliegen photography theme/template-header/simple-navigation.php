@@ -14,15 +14,16 @@
     </div><!-- .simple__navigation__brand -->
     <div class="simple__navigation simple__navigation__contact">
       <?php
-        $aboutID = get_field('about_id', 'option');
-        $aboutMail = get_field('about_mail', 'option');
+        $headerMail = get_field('header_mail', 'option');
+        $headerpageID = get_field('header_link_id', 'option');
+        $headerpageName = get_field('header_link_name', 'option');
       ?>
-      <?php if ($aboutMail) :?>
-        <?php echo $aboutMail; ?>
+      <?php if ($headerMail) :?>
+        <?php echo $headerMail; ?>
       <?php endif; ?>
       <?php echo "/"; ?>
-      <?php if ($aboutID) :?>
-        <a class="simple__navigation__link" href="<?php echo get_page_link($aboutID); ?>">about</a>
+      <?php if ($headerpageID) :?>
+        <a class="simple__navigation__link" href="<?php echo get_page_link($headerpageID); ?>"><?php echo $headerpageName; ?></a>
       <?php endif; ?>
     </div>
   </div>

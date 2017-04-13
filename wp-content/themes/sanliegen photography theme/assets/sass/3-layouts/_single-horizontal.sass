@@ -52,16 +52,15 @@
   display: flex
   align-items: center
   justify-content: flex-start
-  padding: 0
-  bottom: 0
-  left: 0
   width: 100%
   height: 75px
   z-index: 2
   @include media($large-screen)
+    padding: 0
+    bottom: 0
+    left: 0
     padding: 0 20px
     position: fixed
-    justify-content: flex-end
 
   .horizontal__title
     text-transform: uppercase
@@ -73,5 +72,3 @@
     transition: all 0.2s ease-in-out
     @include media($medium-screen)
       font-size: 2rem
-    @include media($large-screen)
-      font-size: 4rem
