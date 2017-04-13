@@ -4,10 +4,12 @@
 @package sanliegen photo template
 -- centered Header
 */
+$mainID = get_field('main_id', 'option');
 ?>
+
 <header class="centered-navigation" role="banner">
   <div class="centered-navigation-wrapper">
-    <a class="brand" href="<?php echo home_url(); ?>"><?php the_field('header_brand', 'option'); ?></a>
+    <a class="brand" href="<?php echo get_page_link($mainID); ?>"><?php the_field('header_brand', 'option'); ?></a>
     <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">
       <span></span>
       <span></span>

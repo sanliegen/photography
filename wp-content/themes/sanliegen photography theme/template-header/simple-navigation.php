@@ -4,11 +4,12 @@
 @package sanliegen photo template
 -- simple Header
 */
+$mainID = get_field('main_id', 'option');
 ?>
 <header class="simple__navigation">
   <div class="simple__navigation__wrapper">
     <div class="simple__navigation simple__navigation__brand">
-      <a class="brand" href="<?php echo home_url(); ?>">
+      <a class="brand" href="<?php echo get_page_link($mainID); ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/img/micki-logo.svg" id="header-logo">
       </a>
     </div><!-- .simple__navigation__brand -->

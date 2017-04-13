@@ -482,8 +482,19 @@ p span {
 }
 
 /* line 104, sass/2-basics/_article.sass */
-.default__article {
+.default__article__one {
   margin-top: 50px;
+}
+
+/* line 107, sass/2-basics/_article.sass */
+.default__article__two {
+  padding: 1em 0px;
+}
+@media screen and (min-width: 768px) {
+  /* line 107, sass/2-basics/_article.sass */
+  .default__article__two {
+    padding: 0px 1em;
+  }
 }
 
 /*
@@ -805,7 +816,7 @@ p span {
   left: 0;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
 }
 
 /* line 2, sass/3-layouts/_layouts.sass */
