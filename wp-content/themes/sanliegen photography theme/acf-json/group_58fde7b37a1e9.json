@@ -1,0 +1,137 @@
+{
+    "key": "group_58fde7b37a1e9",
+    "title": "Footer Options",
+    "fields": [
+        {
+            "key": "field_58fde7d482547",
+            "label": "Footer Theme",
+            "name": "footer_theme",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "footer_one": "Centered Footer",
+                "footer_two": "Simple Footer",
+                "footer_three": "One Link Footer",
+                "footer_four": "No Footer"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical"
+        },
+        {
+            "key": "field_58fde81682548",
+            "label": "Simple Footer Link Name",
+            "name": "footer_link_name",
+            "type": "text",
+            "instructions": "When 'Simple Footer' Link Name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_58fde85f82549",
+            "label": "Simple Footer Link ID",
+            "name": "footer_link_id",
+            "type": "number",
+            "instructions": "When 'SimpleFooter' Page ID",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_58fde8ce8254a",
+            "label": "One Link Footer Name",
+            "name": "one_link_footer_name",
+            "type": "text",
+            "instructions": "When 'One Link Footer' Link Name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_58fde8d88254b",
+            "label": "One Link Footer ID",
+            "name": "one_link_footer_id",
+            "type": "number",
+            "instructions": "When 'One Link Footer' Page ID",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-admin"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1493042311
+}
