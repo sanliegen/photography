@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Grundeinstellungen für WordPress
  *
@@ -102,7 +103,7 @@ $table_prefix  = 'photography_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* Das war’s, Schluss mit dem Bearbeiten! Viel Spaß beim Bloggen. */
 /* That's all, stop editing! Happy blogging. */
@@ -113,3 +114,6 @@ if ( !defined('ABSPATH') )
 
 /** Definiert WordPress-Variablen und fügt Dateien ein.  */
 require_once(ABSPATH . 'wp-settings.php');
+
+
+define('DISALLOW_FILE_EDIT', true);

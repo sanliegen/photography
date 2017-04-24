@@ -1,0 +1,78 @@
+/* CONTACT FORM */
+.contact__us__form
+  position: relative
+  width: 100%
+
+.contact__us__form__field
+  margin-top: 40px
+  width: 100%
+
+  .contact__us__form__group
+    position: relative
+    width: 100%
+
+    label
+      position: absolute
+      top: -17px
+      left: 0
+      // font-size: 20px
+      padding: 0 5px 5px 0
+      line-height: 1em
+      background: #fff
+
+    input
+      border-radius: 0
+      width: 100%
+      padding: 10px 15px
+      border: 2px solid $contactAccent
+      &:active,
+      &:focus
+        outline: none
+
+    textarea
+      width: 100%
+      padding: 10px 15px
+      border: 2px solid $contactAccent
+      &:active,
+      &:focus
+        outline: none
+
+    small
+      font-weight: 700
+      color: #9C013C
+      display: none
+      &.has-error
+        display: block
+
+
+.contact__form__button
+  width: 100%
+  margin-top: 40px
+  background: $accent
+  color: white
+  border-radius: 0
+  border: none
+  padding: 15px 0
+  text-transform: uppercase
+  font-weight: 700
+  letter-spacing: .12em
+  transition: background 0.2s ease-in-out
+  &:hover
+    background: lighten($accent, 10%)
+  &:active,
+  &:focus
+    outline: none
+
+.feedback
+  font-weight: 600
+  display: none
+
+.feedback__success
+  color: $succes
+  &.has-send
+    display: block
+
+.feedback__error
+  color: $error
+  &.has-error-feedback
+    display: block

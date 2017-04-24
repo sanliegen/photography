@@ -14,4 +14,3 @@ if(is_page( $indexID )) { get_header('index'); } else { get_header(); } wp_head(
 		<?php endif; ?>
 	</main>
 </div><!-- .content-area -->
-<?php get_footer(); ?>

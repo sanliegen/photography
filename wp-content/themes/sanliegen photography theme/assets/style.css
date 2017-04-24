@@ -298,17 +298,17 @@ html {
 /* COLORS */
 /* FONTS */
 /* MEDIA */
-/* line 20, sass/2-basics/_variables.sass */
+/* line 24, sass/2-basics/_variables.sass */
 img::selection {
   background: transparent;
 }
 
-/* line 23, sass/2-basics/_variables.sass */
+/* line 27, sass/2-basics/_variables.sass */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 26, sass/2-basics/_variables.sass */
+/* line 30, sass/2-basics/_variables.sass */
 body {
   -webkit-tap-highlight-color: transparent;
 }
@@ -349,11 +349,6 @@ p {
 }
 
 /* line 8, sass/2-basics/_article.sass */
-a {
-  text-decoration: none;
-}
-
-/* line 12, sass/2-basics/_article.sass */
 h1 {
   font-size: 1.8em;
   margin-bottom: 0.5em;
@@ -361,13 +356,13 @@ h1 {
   line-height: 1.5em;
 }
 @media screen and (min-width: 768px) {
-  /* line 12, sass/2-basics/_article.sass */
+  /* line 8, sass/2-basics/_article.sass */
   h1 {
     font-size: 2.4em;
   }
 }
 
-/* line 21, sass/2-basics/_article.sass */
+/* line 17, sass/2-basics/_article.sass */
 h2 {
   font-size: 1.2em;
   line-height: 1.4em;
@@ -376,13 +371,13 @@ h2 {
   font-family: "Tenor Sans", sans-serif;
 }
 @media screen and (min-width: 768px) {
-  /* line 21, sass/2-basics/_article.sass */
+  /* line 17, sass/2-basics/_article.sass */
   h2 {
     font-size: 1.4em;
   }
 }
 
-/* line 32, sass/2-basics/_article.sass */
+/* line 28, sass/2-basics/_article.sass */
 h3 {
   font-size: 1.2em;
   line-height: 1.3em;
@@ -390,7 +385,7 @@ h3 {
   font-weight: 400;
 }
 
-/* line 38, sass/2-basics/_article.sass */
+/* line 34, sass/2-basics/_article.sass */
 p {
   font-size: 22px;
   font-weight: 300;
@@ -398,19 +393,19 @@ p {
   margin-bottom: 1.5em;
   font-weight: 300;
 }
-/* line 46, sass/2-basics/_article.sass */
+/* line 42, sass/2-basics/_article.sass */
 p span {
   font-size: 0.8em;
   text-transform: uppercase;
 }
 
-/* line 50, sass/2-basics/_article.sass */
+/* line 46, sass/2-basics/_article.sass */
 .image__container {
   line-height: 0;
   position: relative;
   width: 100%;
 }
-/* line 54, sass/2-basics/_article.sass */
+/* line 50, sass/2-basics/_article.sass */
 .image__container img {
   height: auto;
   position: relative;
@@ -418,24 +413,24 @@ p span {
   top: 0;
   left: 0;
 }
-/* line 61, sass/2-basics/_article.sass */
+/* line 57, sass/2-basics/_article.sass */
 .image__container img.alignright {
   float: right;
   margin: 0 0 1em 1em;
 }
-/* line 64, sass/2-basics/_article.sass */
+/* line 60, sass/2-basics/_article.sass */
 .image__container img.alignleft {
   float: left;
   margin: 0 1em 1em 0;
 }
-/* line 67, sass/2-basics/_article.sass */
+/* line 63, sass/2-basics/_article.sass */
 .image__container img.aligncenter {
   display: block;
   margin: 0 auto;
 }
 
 /* 404 */
-/* line 72, sass/2-basics/_article.sass */
+/* line 68, sass/2-basics/_article.sass */
 .phtography__error {
   width: 100%;
   height: 100vh;
@@ -449,14 +444,14 @@ p span {
   line-height: 1.5em;
 }
 @media screen and (min-width: 768px) {
-  /* line 72, sass/2-basics/_article.sass */
+  /* line 68, sass/2-basics/_article.sass */
   .phtography__error {
     font-size: 1.4em;
   }
 }
 
 /* Gallery Article */
-/* line 87, sass/2-basics/_article.sass */
+/* line 83, sass/2-basics/_article.sass */
 .vertical__widget__article {
   width: 100%;
   height: auto;
@@ -464,7 +459,7 @@ p span {
   white-space: normal;
 }
 
-/* line 93, sass/2-basics/_article.sass */
+/* line 89, sass/2-basics/_article.sass */
 .horizontal__widget__article {
   width: 100%;
   height: auto;
@@ -475,23 +470,23 @@ p span {
   white-space: normal;
 }
 @media screen and (min-width: 992px) {
-  /* line 93, sass/2-basics/_article.sass */
+  /* line 89, sass/2-basics/_article.sass */
   .horizontal__widget__article {
     padding: 0px 20px;
   }
 }
 
-/* line 104, sass/2-basics/_article.sass */
+/* line 100, sass/2-basics/_article.sass */
 .default__article__one {
   margin-top: 50px;
 }
 
-/* line 107, sass/2-basics/_article.sass */
+/* line 103, sass/2-basics/_article.sass */
 .default__article__two {
   padding: 1em 0px;
 }
 @media screen and (min-width: 768px) {
-  /* line 107, sass/2-basics/_article.sass */
+  /* line 103, sass/2-basics/_article.sass */
   .default__article__two {
     padding: 0px 1em;
   }
@@ -1225,4 +1220,109 @@ p span {
 /* line 16, sass/3-layouts/_one-link-footer.sass */
 .one__link__footer .one__link__footer__link:focus, .one__link__footer .one__link__footer__link:hover {
   color: #575757;
+}
+
+/* CONTACT FORM */
+/* line 2, sass/3-layouts/_contact-form.sass */
+.contact__us__form {
+  position: relative;
+  width: 100%;
+}
+
+/* line 6, sass/3-layouts/_contact-form.sass */
+.contact__us__form__field {
+  margin-top: 40px;
+  width: 100%;
+}
+/* line 10, sass/3-layouts/_contact-form.sass */
+.contact__us__form__field .contact__us__form__group {
+  position: relative;
+  width: 100%;
+}
+/* line 14, sass/3-layouts/_contact-form.sass */
+.contact__us__form__field .contact__us__form__group label {
+  position: absolute;
+  top: -17px;
+  left: 0;
+  padding: 0 5px 5px 0;
+  line-height: 1em;
+  background: #fff;
+}
+/* line 23, sass/3-layouts/_contact-form.sass */
+.contact__us__form__field .contact__us__form__group input {
+  border-radius: 0;
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #ffde79;
+}
+/* line 28, sass/3-layouts/_contact-form.sass */
+.contact__us__form__field .contact__us__form__group input:active, .contact__us__form__field .contact__us__form__group input:focus {
+  outline: none;
+}
+/* line 32, sass/3-layouts/_contact-form.sass */
+.contact__us__form__field .contact__us__form__group textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #ffde79;
+}
+/* line 36, sass/3-layouts/_contact-form.sass */
+.contact__us__form__field .contact__us__form__group textarea:active, .contact__us__form__field .contact__us__form__group textarea:focus {
+  outline: none;
+}
+/* line 40, sass/3-layouts/_contact-form.sass */
+.contact__us__form__field .contact__us__form__group small {
+  font-weight: 700;
+  color: #9C013C;
+  display: none;
+}
+/* line 44, sass/3-layouts/_contact-form.sass */
+.contact__us__form__field .contact__us__form__group small.has-error {
+  display: block;
+}
+
+/* line 48, sass/3-layouts/_contact-form.sass */
+.contact__form__button {
+  width: 100%;
+  margin-top: 40px;
+  background: #ffde79;
+  color: white;
+  border-radius: 0;
+  border: none;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  transition: background 0.2s ease-in-out;
+}
+/* line 60, sass/3-layouts/_contact-form.sass */
+.contact__form__button:hover {
+  background: #ffebac;
+}
+/* line 62, sass/3-layouts/_contact-form.sass */
+.contact__form__button:active, .contact__form__button:focus {
+  outline: none;
+}
+
+/* line 66, sass/3-layouts/_contact-form.sass */
+.feedback {
+  font-weight: 600;
+  display: none;
+}
+
+/* line 70, sass/3-layouts/_contact-form.sass */
+.feedback__success {
+  color: #4A3F61;
+}
+/* line 72, sass/3-layouts/_contact-form.sass */
+.feedback__success.has-send {
+  display: block;
+}
+
+/* line 75, sass/3-layouts/_contact-form.sass */
+.feedback__error {
+  color: #C73264;
+}
+/* line 77, sass/3-layouts/_contact-form.sass */
+.feedback__error.has-error-feedback {
+  display: block;
 }

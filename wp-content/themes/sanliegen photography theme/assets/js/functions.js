@@ -1,5 +1,6 @@
 $(function() {
   magnific();
+  ajax();
 });
 
 function magnific(){
@@ -42,7 +43,50 @@ function magnific(){
     });
   });
 }
+function ajax(){
+  var contactForm = $('#ajax-contact-form');
 
+  contactForm.on('submit', function(e){
+
+    e.preventDefault();
+
+    var form = $(this);
+    var name = form.find('#name').val(),
+        email = form.find('#email').val(),
+        message = form.find('#message').val(),
+        ajaxurl = form.data('url');
+
+    if ( name === '') {
+      $('#small__name').addClass('has-error');
+    }
+    if ( email === '') {
+      $('#small__mail').addClass('has-error');
+    }
+    if ( message === '') {
+      $('#small__message').addClass('has-error');
+    }
+
+
+    if (name && email && message) {
+      $.ajax({
+        url: ajaxurl,
+        type: 'POST',
+        data: {
+          name: name,
+          email: email,
+          message: message,
+          action: 'ajax_save_user_contact_form'
+        },
+        error : function(response){
+          $('.feedback__error').addClass('has-error-feedback');
+        },
+        success : function(response){
+          $('.feedback__success').addClass('has-send');
+        }
+      });/*ENDAJAX*/
+    }/*if (name && email && message)*/
+  });/*contactForm.on('submit')*/
+}
 
 $(window).on("load resize",function(e) {
   var more = document.getElementById("js-centered-more");
