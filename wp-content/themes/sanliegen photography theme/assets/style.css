@@ -925,6 +925,29 @@ p span {
 }
 
 /* line 40, sass/3-layouts/_single-vertical.sass */
+.vertical__widget span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+}
+@media screen and (min-width: 768px) {
+  /* line 40, sass/3-layouts/_single-vertical.sass */
+  .vertical__widget span {
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+  }
+}
+
+/* line 56, sass/3-layouts/_single-vertical.sass */
 .vertical__widget img {
   transition: all 0.5s linear;
   width: 100%;
@@ -934,7 +957,7 @@ p span {
   transform: scale3d(1.1, 1.1, 1);
 }
 
-/* line 48, sass/3-layouts/_single-vertical.sass */
+/* line 64, sass/3-layouts/_single-vertical.sass */
 .vertical__widget__figcaption {
   position: absolute;
   left: 0;
@@ -948,7 +971,7 @@ p span {
   transition: background 0.5s linear;
 }
 
-/* line 60, sass/3-layouts/_single-vertical.sass */
+/* line 76, sass/3-layouts/_single-vertical.sass */
 .vertical__widget a {
   position: absolute;
   left: 0;
@@ -968,17 +991,22 @@ p span {
   color: white;
 }
 
-/* line 78, sass/3-layouts/_single-vertical.sass */
+/* line 94, sass/3-layouts/_single-vertical.sass */
 .vertical__widget:hover .vertical__widget__figcaption {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 81, sass/3-layouts/_single-vertical.sass */
+/* line 97, sass/3-layouts/_single-vertical.sass */
+.vertical__widget:hover .vertical__widget__figcaption__video {
+  background: transparent;
+}
+
+/* line 100, sass/3-layouts/_single-vertical.sass */
 .vertical__widget:hover img {
   transform: scale3d(1, 1, 1);
 }
 
-/* line 84, sass/3-layouts/_single-vertical.sass */
+/* line 103, sass/3-layouts/_single-vertical.sass */
 .vertical__widget:hover a {
   color: white;
 }

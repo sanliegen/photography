@@ -37,6 +37,22 @@
   padding: 0
   margin-bottom: 1em
 
+.vertical__widget span
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  margin: auto
+  color: white
+  z-index: 100
+  width: 50px
+  height: 50px
+  font-size: 50px
+  @include media($medium-screen)
+    width: 100px
+    height: 100px
+    font-size: 100px
 .vertical__widget img
   transition: all 0.5s linear
   width: 100%
@@ -77,6 +93,9 @@
 
 .vertical__widget:hover .vertical__widget__figcaption
   background: rgba(0, 0, 0, 0.3)
+
+.vertical__widget:hover .vertical__widget__figcaption__video
+  background: rgba(0, 0, 0, 0.0)
 
 .vertical__widget:hover img
   transform: scale3d(1, 1, 1)
