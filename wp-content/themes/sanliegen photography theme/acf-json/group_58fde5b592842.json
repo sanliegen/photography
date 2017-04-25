@@ -1,0 +1,131 @@
+{
+    "key": "group_58fde5b592842",
+    "title": "Header Options",
+    "fields": [
+        {
+            "key": "field_58fde6053ed7f",
+            "label": "Header Theme",
+            "name": "header_theme",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "menu_one": "Centered Navigation",
+                "menu_two": "Simple Navigation",
+                "menu_three": "Left Side Navigation"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical"
+        },
+        {
+            "key": "field_58fde63d3ed80",
+            "label": "Header Brand",
+            "name": "header_brand",
+            "type": "text",
+            "instructions": "When 'Centered Navigation' Header Brand",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_58fde6553ed81",
+            "label": "Email",
+            "name": "header_mail",
+            "type": "email",
+            "instructions": "When 'Simple Navigation' eMail",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_58fde6843ed82",
+            "label": "Header Link Name",
+            "name": "Header Link Name",
+            "type": "text",
+            "instructions": "When 'Simple Navigation' Header Link Name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_58fde6a03ed83",
+            "label": "Header Link ID",
+            "name": "header_link_id",
+            "type": "number",
+            "instructions": "When 'Simple Navigation' Header Link PAGE ID",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-admin"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1493042238
+}

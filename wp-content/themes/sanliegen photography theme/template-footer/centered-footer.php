@@ -22,22 +22,22 @@ $footerpageName = get_field('footer_link_name', 'option');
   </div>
   <div class="centered__footer__col centered__footer__social">
     <?php if ($socialFacebook) { ?>
-      <a href="<?php echo $socialFacebook; ?>" target="_blank"><span class="photography__social icon-facebook"></span></a>
+      <a href="<?php echo $socialFacebook; ?>" target="_blank"><span class="photography__icon icon-facebook"></span></a>
     <?php } ?>
     <?php if ($socialInstagram) { ?>
-      <a href="<?php echo $socialInstagram; ?>" target="_blank"><span class="photography__social icon-instagram"></span></a>
+      <a href="<?php echo $socialInstagram; ?>" target="_blank"><span class="photography__icon icon-instagram"></span></a>
     <?php } ?>
     <?php if ($socialTwitter) { ?>
-      <a href="<?php echo $socialTwitter; ?>" target="_blank"><span class="photography__social icon-twitter"></span></a>
+      <a href="<?php echo $socialTwitter; ?>" target="_blank"><span class="photography__icon icon-twitter"></span></a>
     <?php } ?>
     <?php if ($socialPinterest) { ?>
-      <a href="<?php echo $socialPinterest; ?>" target="_blank"><span class="photography__social icon-pinterest"></span></a>
+      <a href="<?php echo $socialPinterest; ?>" target="_blank"><span class="photography__icon icon-pinterest"></span></a>
     <?php } ?>
     <?php if ($socialYoutube) { ?>
-      <a href="<?php echo $socialYoutube; ?>" target="_blank"><span class="photography__social icon-youtube"></span></a>
+      <a href="<?php echo $socialYoutube; ?>" target="_blank"><span class="photography__icon icon-youtube"></span></a>
     <?php } ?>
     <?php if ($socialVimeo) { ?>
-      <a href="<?php echo $socialVimeo; ?>" target="_blank"><span class="photography__social icon-vimeo"></span></a>
+      <a href="<?php echo $socialVimeo; ?>" target="_blank"><span class="photography__icon icon-vimeo"></span></a>
     <?php } ?>
   </div>
 </footer>

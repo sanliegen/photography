@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'socialicon';
-  src:  url('socialicon.eot?whcbh5');
-  src:  url('socialicon.eot?whcbh5#iefix') format('embedded-opentype'),
-    url('socialicon.ttf?whcbh5') format('truetype'),
-    url('socialicon.woff?whcbh5') format('woff'),
-    url('socialicon.svg?whcbh5#socialicon') format('svg');
+  font-family: 'photoicon';
+  src:  url('photoicon.eot?m41w04');
+  src:  url('photoicon.eot?m41w04#iefix') format('embedded-opentype'),
+    url('photoicon.ttf?m41w04') format('truetype'),
+    url('photoicon.woff?m41w04') format('woff'),
+    url('photoicon.svg?m41w04#photoicon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-.photography__social {
+.photography__icon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'socialicon' !important;
+  font-family: 'photoicon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-play:before {
+  content: "\e900";
+}
+.icon-player:before {
+  content: "\e900";
+}
 .icon-pinterest:before {
   content: "\e903";
 }
@@ -64,20 +70,29 @@
   content: "\e902";
 }
 .icon-instagram:before {
-  content: "\e900";
+  content: "\e901";
 }
 .icon-brand4:before {
-  content: "\e900";
+  content: "\e901";
 }
 .icon-social4:before {
-  content: "\e900";
+  content: "\e901";
 }
 .icon-facebook:before {
-  content: "\e901";
+  content: "\e906";
 }
 .icon-brand22:before {
-  content: "\e901";
+  content: "\e906";
 }
 .icon-social22:before {
-  content: "\e901";
+  content: "\e906";
+}
+.icon-soundcloud:before {
+  content: "\e907";
+}
+.icon-brand33:before {
+  content: "\e907";
+}
+.icon-social33:before {
+  content: "\e907";
 }

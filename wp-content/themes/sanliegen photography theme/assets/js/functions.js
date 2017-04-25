@@ -87,36 +87,3 @@ function ajax(){
     }/*if (name && email && message)*/
   });/*contactForm.on('submit')*/
 }
-
-$(window).on("load resize",function(e) {
-  var more = document.getElementById("js-centered-more");
-
-  var link = document.getElementById("dropdown-link");
-
-  if (link) {link.setAttribute('href', "javascript:void(0)");} else {}
-
-  var menuToggle = $("#js-centered-navigation-mobile-menu").unbind();
-  $("#js-centered-navigation-menu").removeClass("show");
-
-  menuToggle.on("click", function(e) {
-    e.preventDefault();
-    $("#js-centered-navigation-menu").slideToggle(function(){
-      if($("#js-centered-navigation-menu").is(":hidden")) {
-        $("#js-centered-navigation-menu").removeAttr("style");
-      }
-    });
-  });
-
-  var dropdownToogle = $("#dropdown-link").unbind();
-  $(".submenu").removeClass("active");
-
-  dropdownToogle.on("click", function(e) {
-    e.preventDefault();
-    $(".submenu").slideToggle(function(){
-      if($(".submenu").is(":hidden")) {
-        $(".submenu").removeAttr("style");
-      }
-    });
-  });
-
-});
