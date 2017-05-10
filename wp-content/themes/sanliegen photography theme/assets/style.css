@@ -883,7 +883,7 @@ p span {
 /* line 12, sass/3-layouts/_single-vertical.sass */
 .vertical__header h1 {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 1.2rem;
   line-height: 1em;
   margin: 0;
@@ -1223,6 +1223,14 @@ p span {
     padding: 3em 3.5em;
   }
 }
+/* line 7, sass/3-layouts/_simple-footer.sass */
+.simple__footer .simple__footer__disclaimer {
+  font-weight: 100;
+}
+/* line 10, sass/3-layouts/_simple-footer.sass */
+.simple__footer .simple__footer__link a {
+  font-weight: 100;
+}
 
 /* line 1, sass/3-layouts/_one-link-footer.sass */
 .one__link__footer {
@@ -1317,37 +1325,38 @@ p span {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.12em;
-  transition: background 0.2s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
 }
-/* line 60, sass/3-layouts/_contact-form.sass */
+/* line 61, sass/3-layouts/_contact-form.sass */
 .contact__form__button:hover {
-  background: #ffebac;
+  opacity: 0.8;
 }
-/* line 62, sass/3-layouts/_contact-form.sass */
+/* line 63, sass/3-layouts/_contact-form.sass */
 .contact__form__button:active, .contact__form__button:focus {
   outline: none;
 }
 
-/* line 66, sass/3-layouts/_contact-form.sass */
+/* line 67, sass/3-layouts/_contact-form.sass */
 .feedback {
   font-weight: 600;
   display: none;
 }
 
-/* line 70, sass/3-layouts/_contact-form.sass */
+/* line 71, sass/3-layouts/_contact-form.sass */
 .feedback__success {
   color: #4A3F61;
 }
-/* line 72, sass/3-layouts/_contact-form.sass */
+/* line 73, sass/3-layouts/_contact-form.sass */
 .feedback__success.has-send {
   display: block;
 }
 
-/* line 75, sass/3-layouts/_contact-form.sass */
+/* line 76, sass/3-layouts/_contact-form.sass */
 .feedback__error {
   color: #C73264;
 }
-/* line 77, sass/3-layouts/_contact-form.sass */
+/* line 78, sass/3-layouts/_contact-form.sass */
 .feedback__error.has-error-feedback {
   display: block;
 }
