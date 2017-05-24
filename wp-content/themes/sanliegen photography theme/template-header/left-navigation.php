@@ -4,7 +4,7 @@
 @package sanliegen photo template
 -- left Header
 */
-
+$logo = get_template_directory_uri().'/img/logo.jpg';
 ?>
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
@@ -23,3 +23,7 @@
     ?>
   </div>
 </header>
+
+<div class="image__logo">
+  <img src="<?php echo $logo; ?>" alt="logo">
+</div>
