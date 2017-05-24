@@ -21,7 +21,7 @@ function edit_admin_menus() {
     remove_menu_page('tools.php'); // Remove the Tools Menu
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
-// add_filter('acf/settings/show_admin', '__return_false');
+add_filter('acf/settings/show_admin', '__return_false');
 
 
 function hide_editor() {
