@@ -1,0 +1,121 @@
+{
+    "key": "group_5909a3fb10fc1",
+    "title": "Portfolio",
+    "fields": [
+        {
+            "key": "field_5909a547bb1cb",
+            "label": "Portfolio Layout",
+            "name": "portfolio_layout",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Eintrag hinzuf\u00fcgen",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "5909a54dafb28",
+                    "name": "portfolio_layout_horizontal_gallery_container",
+                    "label": "Horizontal Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59255edd0cd56",
+                            "label": "Title",
+                            "name": "portfolio_layout_horizontal_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5909a65143c7c",
+                            "label": "Gallery",
+                            "name": "portfolio_layout_horizontal_gallery",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "block",
+                            "button_label": "Eintrag hinzuf\u00fcgen",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5909a9c9d8494",
+                                    "label": "Gallery",
+                                    "name": "portfolio_layout_horizontal_gallery",
+                                    "type": "gallery",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": "",
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "min": "",
+                                    "max": "",
+                                    "preview_size": "thumbnail",
+                                    "insert": "append",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-portfolio.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1495621357
+}

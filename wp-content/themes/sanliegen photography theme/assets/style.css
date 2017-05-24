@@ -497,7 +497,7 @@ p span {
     3 - layouts
   ==================================
 */
-/* line 1, sass/3-layouts/_simple-navigation.sass */
+/* line 2, sass/3-layouts/_simple-navigation.sass */
 .simple__navigation {
   background-color: transparent;
   min-height: 60px;
@@ -508,30 +508,30 @@ p span {
   right: 0;
 }
 
-/* line 10, sass/3-layouts/_simple-navigation.sass */
+/* line 11, sass/3-layouts/_simple-navigation.sass */
 .simple__navigation__wrapper {
   position: relative;
   height: 150px;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 16, sass/3-layouts/_simple-navigation.sass */
+/* line 17, sass/3-layouts/_simple-navigation.sass */
 .simple__navigation__wrapper .simple__navigation {
   position: relative;
   flex-grow: 0;
   flex-shrink: 0;
 }
-/* line 21, sass/3-layouts/_simple-navigation.sass */
+/* line 22, sass/3-layouts/_simple-navigation.sass */
 .simple__navigation__wrapper .simple__navigation__brand {
   flex-basis: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 21, sass/3-layouts/_simple-navigation.sass */
+  /* line 22, sass/3-layouts/_simple-navigation.sass */
   .simple__navigation__wrapper .simple__navigation__brand {
     flex-basis: 350px;
   }
 }
-/* line 26, sass/3-layouts/_simple-navigation.sass */
+/* line 27, sass/3-layouts/_simple-navigation.sass */
 .simple__navigation__wrapper .simple__navigation__brand img {
   position: absolute;
   top: 0;
@@ -542,13 +542,13 @@ p span {
   height: 65px;
 }
 @media screen and (min-width: 768px) {
-  /* line 26, sass/3-layouts/_simple-navigation.sass */
+  /* line 27, sass/3-layouts/_simple-navigation.sass */
   .simple__navigation__wrapper .simple__navigation__brand img {
     left: 0;
     right: 0;
   }
 }
-/* line 38, sass/3-layouts/_simple-navigation.sass */
+/* line 39, sass/3-layouts/_simple-navigation.sass */
 .simple__navigation__wrapper .simple__navigation__contact {
   flex-basis: 100%;
   font-weight: 300;
@@ -559,14 +559,14 @@ p span {
   color: #3D3D3D;
 }
 @media screen and (min-width: 768px) {
-  /* line 38, sass/3-layouts/_simple-navigation.sass */
+  /* line 39, sass/3-layouts/_simple-navigation.sass */
   .simple__navigation__wrapper .simple__navigation__contact {
     font-size: 18px;
     padding-left: 0;
     flex-basis: calc(100% - 350px);
   }
 }
-/* line 51, sass/3-layouts/_simple-navigation.sass */
+/* line 52, sass/3-layouts/_simple-navigation.sass */
 .simple__navigation__wrapper .simple__navigation__contact .simple__navigation__link {
   padding-left: 3px;
 }
@@ -799,6 +799,129 @@ p span {
     padding-left: 1em;
     text-align: right;
     width: 12em;
+  }
+}
+
+/* line 2, sass/3-layouts/_left-navigation.sass */
+.navigation {
+  position: relative;
+  z-index: 100;
+}
+/* line 5, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-menu-button {
+  position: relative;
+  display: block;
+  float: right;
+  height: 40px;
+  width: 30px;
+  margin-right: 10px;
+}
+/* line 12, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-menu-button span {
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+  transform: translateY(-50%);
+}
+/* line 20, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-menu-button span:first-child {
+  margin-top: -8px;
+}
+/* line 22, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-menu-button span:last-child {
+  margin-top: 8px;
+}
+@media screen and (min-width: 768px) {
+  /* line 5, sass/3-layouts/_left-navigation.sass */
+  .navigation .navigation-menu-button {
+    display: none;
+  }
+}
+/* line 29, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+}
+/* line 20, sass/1-tools/bourbon/addons/_clearfix.scss */
+.navigation .navigation-wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media screen and (min-width: 768px) {
+  /* line 29, sass/3-layouts/_left-navigation.sass */
+  .navigation .navigation-wrapper {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    height: calc(100vh - 140px);
+    width: 250px;
+  }
+}
+/* line 43, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-wrapper .navigation-menu {
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  padding-left: 0px;
+  background: white;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  /* line 43, sass/3-layouts/_left-navigation.sass */
+  .navigation .navigation-wrapper .navigation-menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+  }
+}
+/* line 59, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-wrapper .navigation-menu.show {
+  display: block;
+}
+/* line 62, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-wrapper .navigation-menu li {
+  display: block;
+  text-align: right;
+  width: 100%;
+  padding: 10px 10px 10px 0px;
+}
+@media screen and (min-width: 768px) {
+  /* line 62, sass/3-layouts/_left-navigation.sass */
+  .navigation .navigation-wrapper .navigation-menu li {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+/* line 74, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-wrapper .navigation-menu li a {
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+}
+/* line 79, sass/3-layouts/_left-navigation.sass */
+.navigation .navigation-wrapper .navigation-menu .menu-margin {
+  margin: 0;
+  display: none;
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  /* line 79, sass/3-layouts/_left-navigation.sass */
+  .navigation .navigation-wrapper .navigation-menu .menu-margin {
+    display: block;
+    margin-bottom: 50px;
   }
 }
 
@@ -1166,6 +1289,51 @@ p span {
   width: auto;
 }
 
+/* line 1, sass/3-layouts/_portfolio-horizontal-gallery.sass */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 4, sass/3-layouts/_portfolio-horizontal-gallery.sass */
+.portfolio__layout__container {
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+  margin-left: 0px;
+  width: 100%;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 4, sass/3-layouts/_portfolio-horizontal-gallery.sass */
+  .portfolio__layout__container {
+    margin-top: 150px;
+    margin-left: 250px;
+    width: auto;
+    padding: 0;
+  }
+}
+/* line 17, sass/3-layouts/_portfolio-horizontal-gallery.sass */
+.portfolio__layout__container .portfolio__layout__gallery {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+/* line 25, sass/3-layouts/_portfolio-horizontal-gallery.sass */
+.portfolio__layout__container .portfolio__layout__gallery li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 31, sass/3-layouts/_portfolio-horizontal-gallery.sass */
+.portfolio__layout__container .portfolio__layout__gallery .portfolio__layout__gallery__images {
+  height: 200px;
+  width: auto;
+}
+
 /* line 1, sass/3-layouts/_centered-footer.sass */
 .centered__footer {
   width: 100%;
@@ -1320,37 +1488,38 @@ p span {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.12em;
-  transition: background 0.2s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
 }
-/* line 60, sass/3-layouts/_contact-form.sass */
+/* line 61, sass/3-layouts/_contact-form.sass */
 .contact__form__button:hover {
-  background: #ffebac;
+  opacity: 0.8;
 }
-/* line 62, sass/3-layouts/_contact-form.sass */
+/* line 63, sass/3-layouts/_contact-form.sass */
 .contact__form__button:active, .contact__form__button:focus {
   outline: none;
 }
 
-/* line 66, sass/3-layouts/_contact-form.sass */
+/* line 68, sass/3-layouts/_contact-form.sass */
 .feedback {
   font-weight: 600;
   display: none;
 }
 
-/* line 70, sass/3-layouts/_contact-form.sass */
+/* line 72, sass/3-layouts/_contact-form.sass */
 .feedback__success {
   color: #4A3F61;
 }
-/* line 72, sass/3-layouts/_contact-form.sass */
+/* line 74, sass/3-layouts/_contact-form.sass */
 .feedback__success.has-send {
   display: block;
 }
 
-/* line 75, sass/3-layouts/_contact-form.sass */
+/* line 77, sass/3-layouts/_contact-form.sass */
 .feedback__error {
   color: #C73264;
 }
-/* line 77, sass/3-layouts/_contact-form.sass */
+/* line 79, sass/3-layouts/_contact-form.sass */
 .feedback__error.has-error-feedback {
   display: block;
 }
