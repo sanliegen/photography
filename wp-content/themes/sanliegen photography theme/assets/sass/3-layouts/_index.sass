@@ -8,4 +8,8 @@
   background:
     repeat: no-repeat
     position: center center
-    size: cover
+    size: contain
+
+  @include media ($large-screen)
+    background:
+      size: cover

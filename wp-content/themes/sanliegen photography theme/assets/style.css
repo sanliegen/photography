@@ -575,7 +575,13 @@ h1 span {
   left: 0;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
+}
+@media screen and (min-width: 992px) {
+  /* line 2, sass/3-layouts/_index.sass */
+  .image__wrapper {
+    background-size: cover;
+  }
 }
 
 /* line 1, sass/3-layouts/_default-left.sass */
