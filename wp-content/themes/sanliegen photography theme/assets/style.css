@@ -938,13 +938,36 @@ p span {
 }
 
 /* line 2, sass/3-layouts/_layouts.sass */
+.offset__grid__theme {
+  margin-top: 100px;
+}
+
+/* line 5, sass/3-layouts/_layouts.sass */
+.offset__grid__theme__row,
+.offset__grid__theme__row > div[class*='col-'] {
+  display: flex;
+  flex: 1 1 auto;
+  -webkit-flex-flow: row wrap;
+  align-content: flex-start;
+  padding: 0;
+  flex: 0;
+}
+/* line 13, sass/3-layouts/_layouts.sass */
+.offset__grid__theme__row .offset__grid__theme__col,
+.offset__grid__theme__row > div[class*='col-'] .offset__grid__theme__col {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 19, sass/3-layouts/_layouts.sass */
 .flex__grid {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   margin: 5px;
 }
-/* line 8, sass/3-layouts/_layouts.sass */
+/* line 25, sass/3-layouts/_layouts.sass */
 .flex__grid .flex__col {
   position: relative;
   flex-grow: 0;
@@ -953,39 +976,39 @@ p span {
   margin: 5px;
 }
 @media screen and (min-width: 768px) {
-  /* line 8, sass/3-layouts/_layouts.sass */
+  /* line 25, sass/3-layouts/_layouts.sass */
   .flex__grid .flex__col {
     flex-basis: calc(50% - 10px);
   }
 }
-/* line 17, sass/3-layouts/_layouts.sass */
+/* line 34, sass/3-layouts/_layouts.sass */
 .flex__grid .defaul__col {
   flex-basis: calc(100% - 10px);
 }
 @media screen and (min-width: 768px) {
-  /* line 17, sass/3-layouts/_layouts.sass */
+  /* line 34, sass/3-layouts/_layouts.sass */
   .flex__grid .defaul__col {
     flex-basis: calc(50% - 10px);
   }
 }
-/* line 22, sass/3-layouts/_layouts.sass */
+/* line 39, sass/3-layouts/_layouts.sass */
 .flex__grid .defaul__col__margin {
   margin-left: 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 22, sass/3-layouts/_layouts.sass */
+  /* line 39, sass/3-layouts/_layouts.sass */
   .flex__grid .defaul__col__margin {
     margin-left: 25%;
   }
 }
-/* line 27, sass/3-layouts/_layouts.sass */
+/* line 44, sass/3-layouts/_layouts.sass */
 .flex__grid .default__image__wrapper {
   position: relative;
   width: 100;
   overflow: hidden;
   line-height: 0;
 }
-/* line 32, sass/3-layouts/_layouts.sass */
+/* line 49, sass/3-layouts/_layouts.sass */
 .flex__grid .default__image__wrapper img {
   width: 100%;
   height: auto;

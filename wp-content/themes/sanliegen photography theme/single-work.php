@@ -14,8 +14,6 @@ get_header();
 	        <?php get_template_part( 'template-parts/content-single-vertical' );?>
 				<?php elseif( get_row_layout() == 'layout_single_content_horizontal' ): ?>
 					<?php get_template_part( 'template-parts/content-single-horizontal' );?>
-				<?php elseif( get_row_layout() == 'layout_single_content_rows' ): ?>
-					<?php get_template_part( 'template-parts/content-single-rows' );?>
 				<?php endif; ?>
 			<?php endwhile; ?>
 		<?php endif; ?>

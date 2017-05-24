@@ -41,6 +41,9 @@ function hide_editor() {
   if($template_file == 'page-portfolio.php'){ // the filename of the page template
     remove_post_type_support('page', 'editor');
   }
+  if($template_file == 'page-work.php'){ // the filename of the page template
+    remove_post_type_support('page', 'editor');
+  }
 }
 add_action( 'admin_head', 'hide_editor' );
 
