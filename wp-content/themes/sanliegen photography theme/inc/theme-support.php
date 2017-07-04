@@ -21,7 +21,7 @@ function edit_admin_menus() {
     remove_menu_page('tools.php'); // Remove the Tools Menu
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
-// add_filter('acf/settings/show_admin', '__return_false');
+add_filter('acf/settings/show_admin', '__return_false');
 
 
 function hide_editor() {
@@ -39,6 +39,9 @@ function hide_editor() {
     remove_post_type_support('page', 'editor');
   }
   if($template_file == 'page-portfolio.php'){ // the filename of the page template
+    remove_post_type_support('page', 'editor');
+  }
+  if($template_file == 'page-work.php'){ // the filename of the page template
     remove_post_type_support('page', 'editor');
   }
 }

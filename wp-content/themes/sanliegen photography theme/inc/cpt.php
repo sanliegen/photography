@@ -8,7 +8,7 @@
 		THEME CUSTOM POST TYPES
 	========================
 */
-/* SHOWS CPT */
+/* Work CPT */
 function work_custom_post_type() {
 	$labels = array(
 		'name' 				=> 'Work',

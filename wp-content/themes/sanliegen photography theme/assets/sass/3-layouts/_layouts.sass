@@ -1,4 +1,21 @@
-// 2 Col Grid
+// OFFSET GRID
+.offset__grid__theme
+  margin-top: 100px
+
+.offset__grid__theme__row,
+.offset__grid__theme__row > div[class*='col-']
+  display: flex
+  flex: 1 1 auto
+  -webkit-flex-flow: row wrap
+  align-content: flex-start
+  padding: 0
+  flex: 0
+  .offset__grid__theme__col
+    margin-bottom: 100px
+    display: flex
+    align-items: center
+    
+// ORDER GRID
 .flex__grid
   position: relative
   display: flex
