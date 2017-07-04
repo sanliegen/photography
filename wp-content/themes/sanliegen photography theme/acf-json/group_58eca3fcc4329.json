@@ -1,6 +1,6 @@
 {
     "key": "group_58eca3fcc4329",
-    "title": "Order Grid Options",
+    "title": "Column",
     "fields": [
         {
             "key": "field_58eca4319ed5a",
@@ -54,7 +54,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "work"
+                "value": "post"
             }
         ]
     ],
@@ -66,5 +66,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495638103
+    "modified": 1499171169
 }
