@@ -30,12 +30,27 @@
 // vertical widget
 .vertical__widget
   position: relative
-  overflow: hidden
+  // overflow: hidden
   line-height: 0
   width: 100%
   margin: 0
   padding: 0
   margin-bottom: 1em
+
+.figure__title    
+  position: absolute
+  left: 0 
+  top: 100%
+  font-size: 2em
+  font-weight: $light
+  text-transform: uppercase
+  color: black
+  text-align: center
+  width: 100%
+  line-height: 1.2em
+  opacity: 0
+  transition: opacity 0.4s ease-in-out
+    
 
 .vertical__widget span
   position: absolute
@@ -53,13 +68,12 @@
     width: 100px
     height: 100px
     font-size: 100px
+
 .vertical__widget img
-  transition: all 0.5s linear
   width: 100%
   height: auto
   top: 0
   left: 0
-  transform: scale3d(1.1, 1.1, 1)
 
 .vertical__widget__figcaption
   position: absolute
@@ -70,8 +84,7 @@
   width: 100%
   overflow: hidden
   height: 100%
-  background: rgba(0, 0, 0, 0)
-  transition: background 0.5s linear
+  
 
 .vertical__widget a
   position: absolute
@@ -91,14 +104,7 @@
   text-transform: uppercase
   color: white
 
-.vertical__widget:hover .vertical__widget__figcaption
-  background: rgba(0, 0, 0, 0.3)
+.vertical__widget:hover .figure__title
+  opacity: 1
 
-.vertical__widget:hover .vertical__widget__figcaption__video
-  background: rgba(0, 0, 0, 0.0)
 
-.vertical__widget:hover img
-  transform: scale3d(1, 1, 1)
-
-.vertical__widget:hover a
-  color: white

@@ -1059,7 +1059,6 @@ p span {
 /* line 31, sass/3-layouts/_single-vertical.sass */
 .vertical__widget {
   position: relative;
-  overflow: hidden;
   line-height: 0;
   width: 100%;
   margin: 0;
@@ -1068,6 +1067,22 @@ p span {
 }
 
 /* line 40, sass/3-layouts/_single-vertical.sass */
+.figure__title {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  width: 100%;
+  line-height: 1.2em;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* line 55, sass/3-layouts/_single-vertical.sass */
 .vertical__widget span {
   position: absolute;
   top: 0;
@@ -1082,7 +1097,7 @@ p span {
   font-size: 50px;
 }
 @media screen and (min-width: 768px) {
-  /* line 40, sass/3-layouts/_single-vertical.sass */
+  /* line 55, sass/3-layouts/_single-vertical.sass */
   .vertical__widget span {
     width: 100px;
     height: 100px;
@@ -1090,17 +1105,15 @@ p span {
   }
 }
 
-/* line 56, sass/3-layouts/_single-vertical.sass */
+/* line 72, sass/3-layouts/_single-vertical.sass */
 .vertical__widget img {
-  transition: all 0.5s linear;
   width: 100%;
   height: auto;
   top: 0;
   left: 0;
-  transform: scale3d(1.1, 1.1, 1);
 }
 
-/* line 64, sass/3-layouts/_single-vertical.sass */
+/* line 78, sass/3-layouts/_single-vertical.sass */
 .vertical__widget__figcaption {
   position: absolute;
   left: 0;
@@ -1110,11 +1123,9 @@ p span {
   width: 100%;
   overflow: hidden;
   height: 100%;
-  background: transparent;
-  transition: background 0.5s linear;
 }
 
-/* line 76, sass/3-layouts/_single-vertical.sass */
+/* line 89, sass/3-layouts/_single-vertical.sass */
 .vertical__widget a {
   position: absolute;
   left: 0;
@@ -1134,24 +1145,9 @@ p span {
   color: white;
 }
 
-/* line 94, sass/3-layouts/_single-vertical.sass */
-.vertical__widget:hover .vertical__widget__figcaption {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-/* line 97, sass/3-layouts/_single-vertical.sass */
-.vertical__widget:hover .vertical__widget__figcaption__video {
-  background: transparent;
-}
-
-/* line 100, sass/3-layouts/_single-vertical.sass */
-.vertical__widget:hover img {
-  transform: scale3d(1, 1, 1);
-}
-
-/* line 103, sass/3-layouts/_single-vertical.sass */
-.vertical__widget:hover a {
-  color: white;
+/* line 107, sass/3-layouts/_single-vertical.sass */
+.vertical__widget:hover .figure__title {
+  opacity: 1;
 }
 
 /* line 2, sass/3-layouts/_single-horizontal.sass */
@@ -1386,26 +1382,30 @@ body {
   }
 }
 /* line 25, sass/3-layouts/_centered-footer.sass */
+.centered__footer .centered__footer__disclaimer {
+  font-weight: 300;
+}
+/* line 28, sass/3-layouts/_centered-footer.sass */
 .centered__footer .centered__footer__social {
   text-align: left;
   order: 1;
 }
 @media screen and (min-width: 768px) {
-  /* line 25, sass/3-layouts/_centered-footer.sass */
+  /* line 28, sass/3-layouts/_centered-footer.sass */
   .centered__footer .centered__footer__social {
     order: 2;
     text-align: right;
   }
 }
-/* line 31, sass/3-layouts/_centered-footer.sass */
+/* line 34, sass/3-layouts/_centered-footer.sass */
 .centered__footer .centered__footer__social a {
   margin: 0 10px;
 }
-/* line 33, sass/3-layouts/_centered-footer.sass */
+/* line 36, sass/3-layouts/_centered-footer.sass */
 .centered__footer .centered__footer__social a:first-child {
   margin-left: 0;
 }
-/* line 35, sass/3-layouts/_centered-footer.sass */
+/* line 38, sass/3-layouts/_centered-footer.sass */
 .centered__footer .centered__footer__social a span {
   font-size: 1.5rem;
 }

@@ -63,6 +63,7 @@ get_header();
 				</div><!-- .flex__col right-->
 				</div><!-- .flex__grid -->
 			</div><!-- .vertical__container -->
+
 		<?php elseif( get_field('grid_theme', 'option') == 'offset_grid' ): ?>
 
 			<div class="offset__grid__theme container">
@@ -70,8 +71,9 @@ get_header();
 		    <?php
 		      $args = array(
 		        'post_type' => 'work',
-						'order'			=> 'ASC'
-
+		        'orderby'   => 'meta_value_num',
+		        'meta_key'  => 'column_order_offset',
+		        'order' => 'ASC'
 		      );
 		      $workLoop = new WP_Query($args);
 		    ?>
@@ -80,6 +82,7 @@ get_header();
 		      <?php while( $workLoop->have_posts() ): $workLoop->the_post();?>
 						<?php $col = get_field('grid_column'); ?>
 						<?php $offset = get_field('grid_offset'); ?>
+						
 						<?php echo '<li class="offset__grid__theme__col col-xs-12 col-md-'.$col.' col-md-offset-'.$offset.'">'; ?>
 		          <?php get_template_part( 'template-parts/content-work' );?>
 		        </li><!-- li.work__col -->

@@ -47,6 +47,29 @@
             "step": "",
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_59a541960fb5a",
+            "label": "Order",
+            "name": "column_order_offset",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
         }
     ],
     "location": [
@@ -66,5 +89,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495638238
+    "modified": 1504002576
 }
